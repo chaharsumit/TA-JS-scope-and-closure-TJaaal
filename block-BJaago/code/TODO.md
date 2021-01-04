@@ -2,35 +2,34 @@ Create a execution context diagram of the following code on your notebook. Take 
 
 - Take in account the different phases of execution, different execution contexts
 
-
 1.
-```js
-var firstName = "Arya";
-var lastName = "Stark";
 
-function getFullName(first, last){
+```js
+var firstName = 'Arya';
+var lastName = 'Stark';
+
+function getFullName(first, last) {
   return `${first} ${last}`;
 }
 
-function sayHelloToUser(name){
+function sayHelloToUser(name) {
   return `Hello ${name}, How are you doing?`;
 }
 
 var fullName = getFullName(firstName, lastName);
-var jon = getFullName("John", "Snow");
+var jon = getFullName('John', 'Snow');
 
 console.log(fullName);
 
-var userMessage = sayHelloToUser("Bran");
+var userMessage = sayHelloToUser('Bran');
 ```
 
 <!-- Put your image below -->
 
 ![](./img/image-name.jpg)
-
-
 
 2.
+
 ```js
 function sayHi() {
   var name = 'Lydia';
@@ -45,10 +44,9 @@ sayHi();
 <!-- Put your image below -->
 
 ![](./img/image-name.jpg)
-
-
 
 3.
+
 ```js
 function sayHi() {
   console.log(name);
@@ -64,43 +62,15 @@ sayHi();
 
 ![](./img/image-name.jpg)
 
-
-
-4. 
-
-```js
-var arr = [1,2,3,4,5,6];
-
-function double(num){
-  return num * 2;
-}
-
-var doubleArray = arr.map(double);
-```
-
-
-5. 
-
-```js
-var arr = [1,2,3,4,5,6];
-
-var doubleArray = arr.map(double);
-
-function double(num){
-  return num * 2;
-}
-```
-
-
-6. 
+4.
 
 ```js
 console.log(arr); // output
 console.log(username); // output
-var usename = "Sam";
-var arr = [1,2,3,4,5,6];
+var usename = 'Sam';
+var arr = [1, 2, 3, 4, 5, 6];
 
-function double(num){
+function double(num) {
   return num * 2;
 }
 ```
