@@ -1,6 +1,6 @@
 ## Closure Exercise
 
-1. Write a function, `outer` that takes an input `string`. Inside the funcition `outer` define another function expression named `sayHello` which alerts the `input`. `sayHello` should be call immediately after it is defined.
+1. Write a function, `outer` that takes an input `string`. Inside the function `outer` define another function expression named `sayHello` which alerts the `input`. `sayHello` should be call immediately after it is defined.
 
 ```js
 // Your code goes here
@@ -19,7 +19,7 @@ let lastNameLee = lastName('lee'); // logs nothing
 lastNameLee('Brett'); //logs 'Brett Lee'
 ```
 
-This function is useful in case you want to create name for multiple people with same last anme.
+This function is useful in case you want to create name for multiple people with same last name.
 
 ```js
 lastNameLee('Jane'); //logs 'Jane Lee'
@@ -47,7 +47,7 @@ storyOfMyLife.erase(); // ''
 
 5. Create a function named `forEach` which accepts one parameter an array. Inside the function `forEach` there a variable named `index` which is initialized to `0`.
 
-When `forEach` funciton is called it returns anoter function. When the returned function is called it returns the element from the array at specific index. Everytime you call the returned function the value of index should increment.
+When `forEach` function is called it returns another function. When the returned function is called it returns the element from the array at specific index. Every time you call the returned function the value of index should increment.
 
 ```js
 funciton forEach(){
