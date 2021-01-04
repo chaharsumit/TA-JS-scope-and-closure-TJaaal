@@ -72,8 +72,8 @@ function main() {
   inner();
 }
 
-console.log(one, two, three, four); // 5
 main();
+console.log(one, two, three, four); // 5
 ```
 
 <!-- Put your image below -->
@@ -81,4 +81,4 @@ main();
 ![](./img/image-name.jpg)
 
 - Create the execution context diagram
-- What will be the value of 1, 2, 3, 4 and 5
+- What will be the value of 1, 2, 3, 4 and 5 or error if the code does not work
