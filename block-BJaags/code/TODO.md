@@ -4,7 +4,6 @@ To create the execution context diagram consider the following:
 - Different Phases Of Execution Context
 - Var let and const
 
-
 Create the execution context diagram of the following code line by line.
 
 ```js
@@ -56,16 +55,15 @@ function counter(){
 }
 ```
 
-
 Create the execution context diagram of the following code line by line.
 
 ```js
 counter();
-let counter = function(){
+let counter = function () {
   let count = 0;
-  funciton increment(){
+  function increment() {
     return count++;
   }
-  return increment()
-}
+  return increment();
+};
 ```
