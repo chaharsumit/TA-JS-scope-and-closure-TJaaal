@@ -44,7 +44,7 @@ callWithHey('Arya'); // Hey Arya
 callWithHello('How Are You?'); // Hello How Are You?
 ```
 
-5. Write a function called `addGame` which takes a string (name of the game) and returns a function calling that will increment the score by one and print something like `Score of Basketball is 1`.
+5. Write a function called `addGame` which takes a string (name of the game) and the current score. It returns a function calling that will increment the score by one and print something like `Score of Basketball is 1`.
 
 ```js
 function addGame(gameName) {
@@ -52,10 +52,10 @@ function addGame(gameName) {
 }
 
 // Output
-const hockey = addGame('Hockey');
+const hockey = addGame('Hockey', 0);
 hockey(); // Your score of Hockey is 1
 hockey(); // Your score of Hockey is 2
-const cricket = addGame('Cricket');
+const cricket = addGame('Cricket', 1);
 cricket(); // Your score of Cricket is 2
 cricket(); // Your score of Cricket is 2
 ```
@@ -68,10 +68,10 @@ function getCard(suit) {
 }
 
 // Output
-const randomClub = addGame('Club');
+const randomClub = getCard('Club');
 randomClub(); // Card is: 6 Club
 randomClub(); // Card is: A Club
-const randomSpade = addGame('Spade');
+const randomSpade = getCard('Spade');
 randomSpade(); // Card is: 6 Spade
 randomSpade(); // Card is: A Spade
 ```
