@@ -12,6 +12,9 @@ Have `map` return a new array filled with values that are the result of the 'cal
 // Your code goes here
 
 // Test Your Code
+function multiplyByTwo(n) {
+  return n * 2;
+}
 map([1, 2, 3, 4, 5], multiplyByTwo); //-> [2,4,6,8,10]
 multiplyByTwo(1); //-> 2
 multiplyByTwo(2); //-> 4
@@ -23,8 +26,8 @@ multiplyByTwo(2); //-> 4
 // Your code goes here
 
 // Test Your Code
-var alphabet = "";
-var letters = ["a", "b", "c", "d"];
+let alphabet = '';
+let letters = ['a', 'b', 'c', 'd'];
 forEach(letters, function (char) {
   alphabet += char;
 });
@@ -36,14 +39,13 @@ console.log(alphabet); //prints 'abcd'
 ```js
 // Test Your Code
 
-
-var numbers = [1,3,5,4,7,89,234,20;
+var numbers = [1, 3, 5, 4, 7, 89, 234, 20];
 let even = filter(numbers, function (n) {
-  return n % 2 === 0
+  return n % 2 === 0;
 });
 console.log(even); // [4,234,20]
 let odd = filter(numbers, function (n) {
-  return n % 2 !== 0
+  return n % 2 !== 0;
 });
 console.log(odd); // [1,3,5,7,89]
 ```
