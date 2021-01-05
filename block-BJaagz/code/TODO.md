@@ -2,6 +2,7 @@
 
 - `forEach` accepts two parameter array and callback
 - It does not return anything
+- It should work exactly like array `forEach` method
 
 ```js
 function forEach() {}
@@ -15,6 +16,7 @@ forEach(['Sam', 'Jon', 'Arya'], (name, i, arr) =>
 
 - `map` accepts two parameter array and callback
 - It returns same size of array
+- It should work exactly like array `map` method
 
 ```js
 function map() {
@@ -28,6 +30,7 @@ map(['Sam', 'Jon', 'Arya'], (name) => name + name); // ['SamSam', 'JonJon', 'Ary
 
 - `filter` accepts two parameter array and callback
 - It returns same size or smaller array
+- It should work exactly like array `filter` method
 
 ```js
 function filter() {
