@@ -1,9 +1,10 @@
 1. Implement `forEach` array method using Array.reduce
 
+- `forEach` accepts two parameter array and callback
+- It does not return anything
+
 ```js
-function forEach() {
-  // Your code goes here
-}
+function forEach() {}
 
 forEach(['Sam', 'Jon', 'Arya'], (name, i, arr) =>
   console.log(name + name, i, arr)
@@ -11,6 +12,9 @@ forEach(['Sam', 'Jon', 'Arya'], (name, i, arr) =>
 ```
 
 2. Implement `map` array method using Array.reduce
+
+- `map` accepts two parameter array and callback
+- It returns same size of array
 
 ```js
 function map() {
@@ -21,6 +25,9 @@ map(['Sam', 'Jon', 'Arya'], (name) => name + name); // ['SamSam', 'JonJon', 'Ary
 ```
 
 3. Implement `filter` array method using Array.reduce
+
+- `filter` accepts two parameter array and callback
+- It returns same size or smaller array
 
 ```js
 function filter() {
