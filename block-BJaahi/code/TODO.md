@@ -1,6 +1,5 @@
 For the given code below:
 
-- create the execution context diagram and
 - re-write the code in ways that system will understand
 
 For Example:
