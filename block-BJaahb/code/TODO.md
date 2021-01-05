@@ -13,8 +13,7 @@ let getSum = outer();
 let num = getSum();
 ```
 
-
-2. 
+2.
 
 Create the execution context diagram for following code. Also write the output of the code below.
 
@@ -24,10 +23,10 @@ function getCounter() {
 
   return () => {
     return count++;
-  }
-};
+  };
+}
 
-let counter = getCounter()
+let counter = getCounter();
 
 counter(); // output
 counter(); // output
@@ -39,13 +38,13 @@ counter(); // output
 
 ```js
 function makeColorChanger(color) {
-  return function() {
-    document.body.style.backgroundColor = size + 'px';
+  return function () {
+    document.body.style.backgroundColor = color;
   };
 }
 
-let blue = makeColorChanger("blue");
-let tomato = makeColorChanger("tomato");
+let blue = makeColorChanger('blue');
+let tomato = makeColorChanger('tomato');
 
 blue();
 tomato();
