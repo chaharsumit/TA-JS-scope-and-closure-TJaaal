@@ -53,7 +53,7 @@ function nTimes(cb, times, ...rest) {
 
 // TEST
 let log = (msg) => console.log(msg);
-let logThreeTimes = once(log, 3, 'Hello Arya');
+let logThreeTimes = nTimes(log, 3, 'Hello Arya');
 logThreeTimes(); // log message "Hello Arya" (1)
 logThreeTimes(); // log message "Hello Arya" (2)
 logThreeTimes(); // log message "Hello Arya" (3)
