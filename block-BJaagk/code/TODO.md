@@ -18,6 +18,8 @@ let percentage = function (marks,total){
 let percentage = (marks, total) => {
   return (marks * 100) / total;
 }
+
+let percentage = (marks, total) => (marks * 100) / total;
 ```
 
 2. Write Function Declaration or Function Expression next to the function.
@@ -57,7 +59,7 @@ let percentage = (marks, total) => (marks * 100) / total;
 
 3. Why is a function definition an expression in JavaScript? Give one example of function expression.
 
-// function definition is an expression because it is used to execute the set of statements given when function is invoked.for example, let add = (a,b) => {return a+b;};
+// function definition is an expression because it is used to execute the set of statements given when function is invoked and it is an object so its an expression.for example, let add = (a,b) => {return a+b;};
 
 4. Why is a function call an expression in JavaScript?
 
@@ -95,7 +97,7 @@ Above, in (1) we have our function declaration which includes the set of steps t
 
 7. What is the similarities between function definition and function call?
 
-// the similarities between a function definition and a function call is that both of them require the name of the function or its reference for anonymous functions and the parenthesis to declare the function as well as to call them passing the parameters in parenthesis if there exists any in the function declaration
+// the similarities between a function definition and a function call is that both of them require the name of the function or its reference for anonymous functions and the parenthesis to declare the function as well as to call them passing the parameters in parenthesis if there exists any in the function declaration. both are expressions.
 
 8. Is the code below valid or invalid. Explain with reason.
 
@@ -109,7 +111,7 @@ hello.user = 'Sam'; // valid as function is also an object and we can give it a 
 
 9. What is higher order function explain with an example.
 
-// a higher order function is javaScript is a type of function that receives or returns a function as arguments.
+// a higher order function is javaScript is a type of function that receives or returns a function as arguments or it contains other functions inside it.
 
 10. Explain what is callback function. Why you can pass a function inside a function?
 
