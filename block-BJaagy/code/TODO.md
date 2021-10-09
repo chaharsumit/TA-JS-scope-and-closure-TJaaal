@@ -1,6 +1,31 @@
 1. Create a function by your choice that accepts a callback function.
 
+function multiplyAndDivide(a = 0, b = 0, cb1, cb2){
+  let result = cb2(cb1(a,b));
+  return result;
+}
+
+function multiply(a,b){
+  return a * b;
+}
+
+function divide(num){
+  return num / 2;
+}
+
+multiplyAndDivide(10,20,multiply, divide);
+
 2. Create a function by you choice that returns a function reference.
+
+function returnReference(cb){
+  return cb2;
+}
+
+function multiply(a,b){
+  return a * b;
+}
+
+returnReference(multiply);
 
 3. Create a higher order function called `map` that takes two inputs:
    - An array of numbers/string/boolean etc
@@ -12,6 +37,14 @@ Have `map` return a new array filled with values that are the result of the 'cal
 // Your code goes here
 
 // Test Your Code
+function map(arr, cb){
+  let finalArr = [];
+  for(elem of arr){
+    finalArr.push(cb(elem));
+  }
+  return finalArr;
+}
+
 function multiplyByTwo(n) {
   return n * 2;
 }
@@ -26,6 +59,11 @@ multiplyByTwo(2); //-> 4
 // Your code goes here
 
 // Test Your Code
+function forEach(arr, cb){
+  for(char of arr){
+    cb(char);
+  }
+}
 let alphabet = '';
 let letters = ['a', 'b', 'c', 'd'];
 forEach(letters, function (char) {
@@ -38,7 +76,15 @@ console.log(alphabet); //prints 'abcd'
 
 ```js
 // Test Your Code
-
+function filter(arr, cb){
+  let finalArr = [];
+  for(elem of arr){
+    if(cb(elem)){
+      finalArr.push(elem);
+    }
+  }
+  return finalArr;
+}
 var numbers = [1, 3, 5, 4, 7, 89, 234, 20];
 let even = filter(numbers, function (n) {
   return n % 2 === 0;
