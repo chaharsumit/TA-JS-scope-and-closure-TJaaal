@@ -5,6 +5,14 @@
 - It should work exactly like array `forEach` method
 
 ```js
+function forEach(arr, cb){
+  arr.reduce((acc,curr,index) => {
+    cb();
+  });
+}
+forEach(['Sam', 'Jon', 'Arya'], (name, i, arr) =>
+  console.log(name + name, i, arr)
+);
 function forEach() {}
 
 forEach(['Sam', 'Jon', 'Arya'], (name, i, arr) =>
