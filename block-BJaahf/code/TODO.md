@@ -33,8 +33,13 @@ Here's how it works. The function has an "accumulator value" which starts as the
 
 ```js
 function reduce(array, callback, initialValue) {
-	
+	let acc = initialValue;
+  for(item of array){
+    acc = item;
+		return callback(acc,item);
+	}
 }
+
 
 // Test
 var nums = [4, 1, 3];
