@@ -2,9 +2,14 @@
 
 ```js
 function once(cb) {
+  let count = 0;
+  if(count++ > 0){
+    return undefined;
+  }else{ 
+    return cb;
+  }
   // your code goes here
 }
-
 // TEST
 function sayHello() {
   alert('Call me once!');
@@ -17,7 +22,13 @@ log(); // return undefinde (can't be called twice)
 2. Change the above function in such a way that the function accepts two parameter a callback function and parameter for the callback function. When calling the function pass the parameters.
 
 ```js
-function once(cb) {
+function once(cb, message) {
+  let count = 0;
+  if(count > 0){
+    return undefined;
+  }else{ 
+    return cb;
+  }
   // your code goes here
 }
 
