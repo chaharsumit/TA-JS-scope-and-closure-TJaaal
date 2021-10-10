@@ -67,9 +67,9 @@ The final output from the third array will be matched agains the same indexed el
 ```js
 function objOfMatchesWithArray(array1, array2, callback) {
   return array1.reduce((acc,curr,index) => {
-    acc[curr] = [];
-    for(elm of callback){
-      acc[curr] = elm(curr);
+    let val = callback.reduce((acc, fn) => fn(acc), curr);
+    if(val === array2[index]){
+     acc[curr] = array2[index]; 
     }
     return acc;
   },{});
