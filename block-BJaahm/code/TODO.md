@@ -3,12 +3,11 @@
 ```js
 function intersection(...arrays) {
   return arrays.reduce((acc,curr,index) => {
-    for(){
-      
-    }
+    acc = acc.filter(elm => curr.includes(elm));
     return acc;
-  }, []);
+  });
 }
+
 // Test
 console.log(
   intersection(
@@ -22,7 +21,12 @@ console.log(
 2. Construct a function `union` that compares input arrays and returns a new array that contains all elements. If there are duplicate elements, only add it once to the new array. Preserve the order of the elements starting from the first element of the first input array. You can only use reduce method to do this.
 
 ```js
-function union(arrays) {}
+function union(...arrays) {
+	return arrays.reduce((acc,curr) => {
+		acc = acc.filter(elm => !curr.includes(elm)).concat(curr);
+		return acc;
+	})
+}
 
 // Test
 console.log(
