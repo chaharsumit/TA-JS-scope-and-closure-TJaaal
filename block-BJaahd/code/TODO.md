@@ -27,6 +27,8 @@ counter.increment(); // 2
 counter.value(); // 2
 counter.decrement(); // 1
 counter.value(); // 1
+
+![](./20211010_122157.jpg);
 ```
 
 2. Create the execution context diagram and write the output.
@@ -64,4 +66,6 @@ console.log(counter1.value()); // 2
 counter1.decrement();
 console.log(counter1.value()); // 1
 console.log(counter2.value()); // 0
+
+![](./20211010_122211.jpg);
 ```
